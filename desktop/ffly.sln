@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ffly", "ffly\ffly.csproj", "{9DBD35E5-9AB0-4018-95FD-06DE9D797F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MILHTMLParser", "MILHTML 2\MILHTMLParser\MILHTMLParser.csproj", "{B11D17CE-BF2B-4938-AC78-F24221EE63F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DBD35E5-9AB0-4018-95FD-06DE9D797F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBD35E5-9AB0-4018-95FD-06DE9D797F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBD35E5-9AB0-4018-95FD-06DE9D797F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBD35E5-9AB0-4018-95FD-06DE9D797F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11D17CE-BF2B-4938-AC78-F24221EE63F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11D17CE-BF2B-4938-AC78-F24221EE63F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11D17CE-BF2B-4938-AC78-F24221EE63F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11D17CE-BF2B-4938-AC78-F24221EE63F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ffly\ffly.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
