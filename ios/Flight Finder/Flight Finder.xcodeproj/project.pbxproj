@@ -36,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		19819F5A188BB6E700FAA83A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19819F53188BB6E600FAA83A /* Kal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Kal;
+		};
 		19B3C22F182CBE7E00B221CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 19B3C1F2182CBE7D00B221CF /* Project object */;
@@ -56,6 +63,7 @@
 		19318ADE183340E600E2FC16 /* AirportFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirportFinder.m; sourceTree = "<group>"; };
 		19318AE1183341D400E2FC16 /* FlightFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlightFinder.xcdatamodel; sourceTree = "<group>"; };
 		19318AE3183348B100E2FC16 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		19819F53188BB6E600FAA83A /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kal.xcodeproj; path = ../share/Kal/src/Kal.xcodeproj; sourceTree = "<group>"; };
 		19B3C1FB182CBE7D00B221CF /* Flight Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flight Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B3C1FF182CBE7D00B221CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		19B3C201182CBE7D00B221CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,10 +141,18 @@
 			path = Dialogs;
 			sourceTree = "<group>";
 		};
+		19819F54188BB6E600FAA83A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19819F5B188BB6E700FAA83A /* libKal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		19B3C1F0182CBE7D00B221CF = {
 			isa = PBXGroup;
 			children = (
-				19318AE3183348B100E2FC16 /* CoreData.framework */,
+				19819F53188BB6E600FAA83A /* Kal.xcodeproj */,
 				19B3C205182CBE7D00B221CF /* Flight Finder */,
 				19B3C231182CBE7E00B221CF /* Flight FinderTests */,
 				19B3C1FE182CBE7D00B221CF /* Frameworks */,
@@ -156,6 +172,7 @@
 		19B3C1FE182CBE7D00B221CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19318AE3183348B100E2FC16 /* CoreData.framework */,
 				19B3C1FF182CBE7D00B221CF /* UIKit.framework */,
 				19B3C201182CBE7D00B221CF /* Foundation.framework */,
 				19B3C203182CBE7D00B221CF /* CoreGraphics.framework */,
@@ -175,12 +192,8 @@
 				19B3C214182CBE7D00B221CF /* MainStoryboard_iPad.storyboard */,
 				19B3C217182CBE7D00B221CF /* FirstViewController.h */,
 				19B3C218182CBE7D00B221CF /* FirstViewController.m */,
-				19B3C21A182CBE7E00B221CF /* first.png */,
-				19B3C21C182CBE7E00B221CF /* first@2x.png */,
 				19B3C21E182CBE7E00B221CF /* SecondViewController.h */,
 				19B3C21F182CBE7E00B221CF /* SecondViewController.m */,
-				19B3C221182CBE7E00B221CF /* second.png */,
-				19B3C223182CBE7E00B221CF /* second@2x.png */,
 				19B3C242182CC54300B221CF /* AirportFinderViewController.h */,
 				19B3C243182CC54300B221CF /* AirportFinderViewController.m */,
 				19B3C206182CBE7D00B221CF /* Supporting Files */,
@@ -191,6 +204,10 @@
 		19B3C206182CBE7D00B221CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				19B3C21A182CBE7E00B221CF /* first.png */,
+				19B3C21C182CBE7E00B221CF /* first@2x.png */,
+				19B3C221182CBE7E00B221CF /* second.png */,
+				19B3C223182CBE7E00B221CF /* second@2x.png */,
 				19B3C207182CBE7D00B221CF /* Flight Finder-Info.plist */,
 				19B3C208182CBE7D00B221CF /* InfoPlist.strings */,
 				19B3C20B182CBE7D00B221CF /* main.m */,
@@ -277,6 +294,12 @@
 			mainGroup = 19B3C1F0182CBE7D00B221CF;
 			productRefGroup = 19B3C1FC182CBE7D00B221CF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 19819F54188BB6E600FAA83A /* Products */;
+					ProjectRef = 19819F53188BB6E600FAA83A /* Kal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				19B3C1FA182CBE7D00B221CF /* Flight Finder */,
@@ -284,6 +307,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		19819F5B188BB6E700FAA83A /* libKal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKal.a;
+			remoteRef = 19819F5A188BB6E700FAA83A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		19B3C1F9182CBE7D00B221CF /* Resources */ = {
