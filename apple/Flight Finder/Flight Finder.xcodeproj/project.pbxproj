@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19318AD8183340CA00E2FC16 /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 19318AD3183340CA00E2FC16 /* Airport.m */; };
+		19318AD9183340CA00E2FC16 /* DBInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 19318AD5183340CA00E2FC16 /* DBInterface.m */; };
+		19318ADA183340CA00E2FC16 /* StatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19318AD7183340CA00E2FC16 /* StatusManager.m */; };
+		19318ADF183340E600E2FC16 /* AirportFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 19318ADE183340E600E2FC16 /* AirportFinder.m */; };
+		19318AE2183341D400E2FC16 /* FlightFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19318AE0183341D400E2FC16 /* FlightFinder.xcdatamodeld */; };
+		19318AE4183348B100E2FC16 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19318AE3183348B100E2FC16 /* CoreData.framework */; };
+		19B3C200182CBE7D00B221CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B3C1FF182CBE7D00B221CF /* UIKit.framework */; };
+		19B3C202182CBE7D00B221CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B3C201182CBE7D00B221CF /* Foundation.framework */; };
+		19B3C204182CBE7D00B221CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B3C203182CBE7D00B221CF /* CoreGraphics.framework */; };
+		19B3C20A182CBE7D00B221CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19B3C208182CBE7D00B221CF /* InfoPlist.strings */; };
+		19B3C20C182CBE7D00B221CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3C20B182CBE7D00B221CF /* main.m */; };
+		19B3C210182CBE7D00B221CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3C20F182CBE7D00B221CF /* AppDelegate.m */; };
+		19B3C213182CBE7D00B221CF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B3C211182CBE7D00B221CF /* MainStoryboard_iPhone.storyboard */; };
+		19B3C216182CBE7D00B221CF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B3C214182CBE7D00B221CF /* MainStoryboard_iPad.storyboard */; };
+		19B3C219182CBE7D00B221CF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3C218182CBE7D00B221CF /* FirstViewController.m */; };
+		19B3C21B182CBE7E00B221CF /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B3C21A182CBE7E00B221CF /* first.png */; };
+		19B3C21D182CBE7E00B221CF /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B3C21C182CBE7E00B221CF /* first@2x.png */; };
+		19B3C220182CBE7E00B221CF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3C21F182CBE7E00B221CF /* SecondViewController.m */; };
+		19B3C222182CBE7E00B221CF /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B3C221182CBE7E00B221CF /* second.png */; };
+		19B3C224182CBE7E00B221CF /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B3C223182CBE7E00B221CF /* second@2x.png */; };
+		19B3C22C182CBE7E00B221CF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B3C22B182CBE7E00B221CF /* SenTestingKit.framework */; };
+		19B3C22D182CBE7E00B221CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B3C1FF182CBE7D00B221CF /* UIKit.framework */; };
+		19B3C22E182CBE7E00B221CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B3C201182CBE7D00B221CF /* Foundation.framework */; };
+		19B3C236182CBE7E00B221CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19B3C234182CBE7E00B221CF /* InfoPlist.strings */; };
+		19B3C239182CBE7E00B221CF /* Flight_FinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3C238182CBE7E00B221CF /* Flight_FinderTests.m */; };
+		19B3C244182CC54300B221CF /* AirportFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3C243182CC54300B221CF /* AirportFinderViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19B3C22F182CBE7E00B221CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B3C1F2182CBE7D00B221CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B3C1FA182CBE7D00B221CF;
+			remoteInfo = "Flight Finder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19318AD2183340CA00E2FC16 /* Airport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
+		19318AD3183340CA00E2FC16 /* Airport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
+		19318AD4183340CA00E2FC16 /* DBInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBInterface.h; sourceTree = "<group>"; };
+		19318AD5183340CA00E2FC16 /* DBInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBInterface.m; sourceTree = "<group>"; };
+		19318AD6183340CA00E2FC16 /* StatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusManager.h; sourceTree = "<group>"; };
+		19318AD7183340CA00E2FC16 /* StatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusManager.m; sourceTree = "<group>"; };
+		19318ADD183340E600E2FC16 /* AirportFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirportFinder.h; sourceTree = "<group>"; };
+		19318ADE183340E600E2FC16 /* AirportFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirportFinder.m; sourceTree = "<group>"; };
+		19318AE1183341D400E2FC16 /* FlightFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlightFinder.xcdatamodel; sourceTree = "<group>"; };
+		19318AE3183348B100E2FC16 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		19B3C1FB182CBE7D00B221CF /* Flight Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flight Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B3C1FF182CBE7D00B221CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19B3C201182CBE7D00B221CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19B3C203182CBE7D00B221CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19B3C207182CBE7D00B221CF /* Flight Finder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flight Finder-Info.plist"; sourceTree = "<group>"; };
+		19B3C209182CBE7D00B221CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19B3C20B182CBE7D00B221CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19B3C20D182CBE7D00B221CF /* Flight Finder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flight Finder-Prefix.pch"; sourceTree = "<group>"; };
+		19B3C20E182CBE7D00B221CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19B3C20F182CBE7D00B221CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19B3C212182CBE7D00B221CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		19B3C215182CBE7D00B221CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		19B3C217182CBE7D00B221CF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		19B3C218182CBE7D00B221CF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		19B3C21A182CBE7E00B221CF /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		19B3C21C182CBE7E00B221CF /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		19B3C21E182CBE7E00B221CF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		19B3C21F182CBE7E00B221CF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		19B3C221182CBE7E00B221CF /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		19B3C223182CBE7E00B221CF /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		19B3C22A182CBE7E00B221CF /* Flight FinderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flight FinderTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B3C22B182CBE7E00B221CF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		19B3C233182CBE7E00B221CF /* Flight FinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flight FinderTests-Info.plist"; sourceTree = "<group>"; };
+		19B3C235182CBE7E00B221CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19B3C237182CBE7E00B221CF /* Flight_FinderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flight_FinderTests.h; sourceTree = "<group>"; };
+		19B3C238182CBE7E00B221CF /* Flight_FinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flight_FinderTests.m; sourceTree = "<group>"; };
+		19B3C242182CC54300B221CF /* AirportFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirportFinderViewController.h; sourceTree = "<group>"; };
+		19B3C243182CC54300B221CF /* AirportFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirportFinderViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19B3C1F8182CBE7D00B221CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19318AE4183348B100E2FC16 /* CoreData.framework in Frameworks */,
+				19B3C200182CBE7D00B221CF /* UIKit.framework in Frameworks */,
+				19B3C202182CBE7D00B221CF /* Foundation.framework in Frameworks */,
+				19B3C204182CBE7D00B221CF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B3C226182CBE7E00B221CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B3C22C182CBE7E00B221CF /* SenTestingKit.framework in Frameworks */,
+				19B3C22D182CBE7E00B221CF /* UIKit.framework in Frameworks */,
+				19B3C22E182CBE7E00B221CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19318AD1183340CA00E2FC16 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				19318AD2183340CA00E2FC16 /* Airport.h */,
+				19318AD3183340CA00E2FC16 /* Airport.m */,
+				19318AD4183340CA00E2FC16 /* DBInterface.h */,
+				19318AD5183340CA00E2FC16 /* DBInterface.m */,
+				19318AD6183340CA00E2FC16 /* StatusManager.h */,
+				19318AD7183340CA00E2FC16 /* StatusManager.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		19318ADC183340E600E2FC16 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				19318ADD183340E600E2FC16 /* AirportFinder.h */,
+				19318ADE183340E600E2FC16 /* AirportFinder.m */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		19B3C1F0182CBE7D00B221CF = {
+			isa = PBXGroup;
+			children = (
+				19318AE3183348B100E2FC16 /* CoreData.framework */,
+				19B3C205182CBE7D00B221CF /* Flight Finder */,
+				19B3C231182CBE7E00B221CF /* Flight FinderTests */,
+				19B3C1FE182CBE7D00B221CF /* Frameworks */,
+				19B3C1FC182CBE7D00B221CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19B3C1FC182CBE7D00B221CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19B3C1FB182CBE7D00B221CF /* Flight Finder.app */,
+				19B3C22A182CBE7E00B221CF /* Flight FinderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19B3C1FE182CBE7D00B221CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19B3C1FF182CBE7D00B221CF /* UIKit.framework */,
+				19B3C201182CBE7D00B221CF /* Foundation.framework */,
+				19B3C203182CBE7D00B221CF /* CoreGraphics.framework */,
+				19B3C22B182CBE7E00B221CF /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19B3C205182CBE7D00B221CF /* Flight Finder */ = {
+			isa = PBXGroup;
+			children = (
+				19318ADC183340E600E2FC16 /* Dialogs */,
+				19318AD1183340CA00E2FC16 /* Logic */,
+				19B3C20E182CBE7D00B221CF /* AppDelegate.h */,
+				19B3C20F182CBE7D00B221CF /* AppDelegate.m */,
+				19B3C211182CBE7D00B221CF /* MainStoryboard_iPhone.storyboard */,
+				19B3C214182CBE7D00B221CF /* MainStoryboard_iPad.storyboard */,
+				19B3C217182CBE7D00B221CF /* FirstViewController.h */,
+				19B3C218182CBE7D00B221CF /* FirstViewController.m */,
+				19B3C21A182CBE7E00B221CF /* first.png */,
+				19B3C21C182CBE7E00B221CF /* first@2x.png */,
+				19B3C21E182CBE7E00B221CF /* SecondViewController.h */,
+				19B3C21F182CBE7E00B221CF /* SecondViewController.m */,
+				19B3C221182CBE7E00B221CF /* second.png */,
+				19B3C223182CBE7E00B221CF /* second@2x.png */,
+				19B3C242182CC54300B221CF /* AirportFinderViewController.h */,
+				19B3C243182CC54300B221CF /* AirportFinderViewController.m */,
+				19B3C206182CBE7D00B221CF /* Supporting Files */,
+			);
+			path = "Flight Finder";
+			sourceTree = "<group>";
+		};
+		19B3C206182CBE7D00B221CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19B3C207182CBE7D00B221CF /* Flight Finder-Info.plist */,
+				19B3C208182CBE7D00B221CF /* InfoPlist.strings */,
+				19B3C20B182CBE7D00B221CF /* main.m */,
+				19B3C20D182CBE7D00B221CF /* Flight Finder-Prefix.pch */,
+				19318AE0183341D400E2FC16 /* FlightFinder.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19B3C231182CBE7E00B221CF /* Flight FinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				19B3C237182CBE7E00B221CF /* Flight_FinderTests.h */,
+				19B3C238182CBE7E00B221CF /* Flight_FinderTests.m */,
+				19B3C232182CBE7E00B221CF /* Supporting Files */,
+			);
+			path = "Flight FinderTests";
+			sourceTree = "<group>";
+		};
+		19B3C232182CBE7E00B221CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19B3C233182CBE7E00B221CF /* Flight FinderTests-Info.plist */,
+				19B3C234182CBE7E00B221CF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19B3C1FA182CBE7D00B221CF /* Flight Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B3C23C182CBE7E00B221CF /* Build configuration list for PBXNativeTarget "Flight Finder" */;
+			buildPhases = (
+				19B3C1F7182CBE7D00B221CF /* Sources */,
+				19B3C1F8182CBE7D00B221CF /* Frameworks */,
+				19B3C1F9182CBE7D00B221CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flight Finder";
+			productName = "Flight Finder";
+			productReference = 19B3C1FB182CBE7D00B221CF /* Flight Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19B3C229182CBE7E00B221CF /* Flight FinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B3C23F182CBE7E00B221CF /* Build configuration list for PBXNativeTarget "Flight FinderTests" */;
+			buildPhases = (
+				19B3C225182CBE7E00B221CF /* Sources */,
+				19B3C226182CBE7E00B221CF /* Frameworks */,
+				19B3C227182CBE7E00B221CF /* Resources */,
+				19B3C228182CBE7E00B221CF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19B3C230182CBE7E00B221CF /* PBXTargetDependency */,
+			);
+			name = "Flight FinderTests";
+			productName = "Flight FinderTests";
+			productReference = 19B3C22A182CBE7E00B221CF /* Flight FinderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19B3C1F2182CBE7D00B221CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Swift Concepts";
+			};
+			buildConfigurationList = 19B3C1F5182CBE7D00B221CF /* Build configuration list for PBXProject "Flight Finder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19B3C1F0182CBE7D00B221CF;
+			productRefGroup = 19B3C1FC182CBE7D00B221CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19B3C1FA182CBE7D00B221CF /* Flight Finder */,
+				19B3C229182CBE7E00B221CF /* Flight FinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19B3C1F9182CBE7D00B221CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B3C20A182CBE7D00B221CF /* InfoPlist.strings in Resources */,
+				19B3C213182CBE7D00B221CF /* MainStoryboard_iPhone.storyboard in Resources */,
+				19B3C216182CBE7D00B221CF /* MainStoryboard_iPad.storyboard in Resources */,
+				19B3C21B182CBE7E00B221CF /* first.png in Resources */,
+				19B3C21D182CBE7E00B221CF /* first@2x.png in Resources */,
+				19B3C222182CBE7E00B221CF /* second.png in Resources */,
+				19B3C224182CBE7E00B221CF /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B3C227182CBE7E00B221CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B3C236182CBE7E00B221CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B3C228182CBE7E00B221CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B3C1F7182CBE7D00B221CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B3C20C182CBE7D00B221CF /* main.m in Sources */,
+				19B3C210182CBE7D00B221CF /* AppDelegate.m in Sources */,
+				19B3C219182CBE7D00B221CF /* FirstViewController.m in Sources */,
+				19B3C220182CBE7E00B221CF /* SecondViewController.m in Sources */,
+				19B3C244182CC54300B221CF /* AirportFinderViewController.m in Sources */,
+				19318AD8183340CA00E2FC16 /* Airport.m in Sources */,
+				19318AD9183340CA00E2FC16 /* DBInterface.m in Sources */,
+				19318ADA183340CA00E2FC16 /* StatusManager.m in Sources */,
+				19318ADF183340E600E2FC16 /* AirportFinder.m in Sources */,
+				19318AE2183341D400E2FC16 /* FlightFinder.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B3C225182CBE7E00B221CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B3C239182CBE7E00B221CF /* Flight_FinderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19B3C230182CBE7E00B221CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B3C1FA182CBE7D00B221CF /* Flight Finder */;
+			targetProxy = 19B3C22F182CBE7E00B221CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19B3C208182CBE7D00B221CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B3C209182CBE7D00B221CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19B3C211182CBE7D00B221CF /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B3C212182CBE7D00B221CF /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		19B3C214182CBE7D00B221CF /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B3C215182CBE7D00B221CF /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		19B3C234182CBE7E00B221CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B3C235182CBE7E00B221CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19B3C23A182CBE7E00B221CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19B3C23B182CBE7E00B221CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19B3C23D182CBE7E00B221CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flight Finder/Flight Finder-Prefix.pch";
+				INFOPLIST_FILE = "Flight Finder/Flight Finder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19B3C23E182CBE7E00B221CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flight Finder/Flight Finder-Prefix.pch";
+				INFOPLIST_FILE = "Flight Finder/Flight Finder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		19B3C240182CBE7E00B221CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flight Finder.app/Flight Finder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flight Finder/Flight Finder-Prefix.pch";
+				INFOPLIST_FILE = "Flight FinderTests/Flight FinderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		19B3C241182CBE7E00B221CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flight Finder.app/Flight Finder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flight Finder/Flight Finder-Prefix.pch";
+				INFOPLIST_FILE = "Flight FinderTests/Flight FinderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19B3C1F5182CBE7D00B221CF /* Build configuration list for PBXProject "Flight Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B3C23A182CBE7E00B221CF /* Debug */,
+				19B3C23B182CBE7E00B221CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B3C23C182CBE7E00B221CF /* Build configuration list for PBXNativeTarget "Flight Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B3C23D182CBE7E00B221CF /* Debug */,
+				19B3C23E182CBE7E00B221CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B3C23F182CBE7E00B221CF /* Build configuration list for PBXNativeTarget "Flight FinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B3C240182CBE7E00B221CF /* Debug */,
+				19B3C241182CBE7E00B221CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		19318AE0183341D400E2FC16 /* FlightFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19318AE1183341D400E2FC16 /* FlightFinder.xcdatamodel */,
+			);
+			currentVersion = 19318AE1183341D400E2FC16 /* FlightFinder.xcdatamodel */;
+			path = FlightFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 19B3C1F2182CBE7D00B221CF /* Project object */;
+}
