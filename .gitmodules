@@ -1,0 +1,3 @@
+[submodule "ios/share/Kal"]
+	path = ios/share/Kal
+	url = git@github.com:klazuka/Kal
